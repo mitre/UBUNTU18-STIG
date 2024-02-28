@@ -150,10 +150,10 @@
 -w /sbin/modprobe -p x -k modules
 {% endif %}
 {% if ubtu_18_010391 %}
--w /bin/kmod -p x -k modules
+{% comment %} -w /bin/kmod -p x -k modules {% endcomment %}
 -w /sbin/kmod -p x -k modules
 {% endif %}
 {% if ubtu_18_010392 %}
--w /bin/fdisk -p x -k fdisk
+{% comment %} -w /bin/fdisk -p x -k fdisk {% endcomment %}
 -w /sbin/fdisk -p x -k fdisk
 {% endif %}
